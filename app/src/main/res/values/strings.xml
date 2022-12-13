@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Barmajiaat</string>
+    <string name="register_banner">Register</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="gender">Gender</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="register_button">Register</string>
+    <string name="user_name">User Name</string>
 </resources>

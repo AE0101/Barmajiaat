@@ -4,7 +4,7 @@
 
 
         // to make the activity fullscreen.
-        <item name="android:windowFullscreen">true</item>
+
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>

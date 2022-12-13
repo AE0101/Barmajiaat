@@ -12,15 +12,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Barmajiaat"
         tools:targetApi="31">
+
+
+
+<!-- RegisterActivity -->
+
         <activity
-            android:name=".LoginActivity"
+            android:name=".MainFolder.UI.auth.RegisterActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+
+
+
+<!-- LoginActivity -->
+
         <activity
-            android:name=".SplashActivity"
+            android:name=".MainFolder.UI.auth.LoginActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+
+
+<!-- SplashActivity -->
+
+        <activity
+            android:name=".MainFolder.UI.SplashActivity"
             android:exported="true">
 
             <!-- this code is responsible for showing this activity first when the app opens -->
@@ -34,8 +57,13 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+
+
+<!-- MainActivity -->
+
         <activity
-            android:name=".MainActivity"
+            android:name=".MainFolder.UI.MainActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"

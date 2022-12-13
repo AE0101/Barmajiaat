@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainFolder.UI.auth.RegisterActivity"
+    android:background="@drawable/gradient_splash_background">
+
+
+
+<!-- Register banner-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_banner"
+        android:textSize="36sp"
+        android:textColor="@color/RegLogBannerFont"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginTop="88dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginBottom="660dp" />
+
+
+
+
+
+<!-- UserName Edit Text-->
+
+    <EditText
+        android:id="@+id/register_etUserName"
+        android:inputType="text"
+        android:drawableStart="@drawable/ic_username_focused_color_list"
+        android:drawablePadding="13dp"
+        android:layout_width="303.04dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="209dp"
+        android:layout_marginBottom="547dp"
+        android:layout_marginStart="45dp"
+        android:textColor="@color/black"
+        android:textColorHint="#78909C"
+        android:backgroundTint="@color/edit_text_line_focus_tint_list"
+        android:hint="@string/user_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+         />
+
+
+    <!-- Email Edit Text-->
+
+    <EditText
+        android:id="@+id/register_etEmail"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/ic_mail_focus_color_list"
+        android:drawablePadding="13dp"
+        android:layout_width="303.04dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="282dp"
+        android:layout_marginBottom="476dp"
+        android:layout_marginStart="45dp"
+        android:textColor="@color/black"
+        android:textColorHint="#78909C"
+        android:backgroundTint="@color/edit_text_line_focus_tint_list"
+        android:hint= "@string/email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+
+
+
+
+
+
+<!-- Password Edit Text-->
+
+    <EditText
+        android:id="@+id/register_etPassword"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_password_focus_color_list"
+        android:drawablePadding="13dp"
+        android:layout_width="303.04dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="352dp"
+        android:layout_marginBottom="405dp"
+        android:layout_marginStart="45dp"
+        android:textColor="@color/black"
+        android:textColorHint="#78909C"
+        android:backgroundTint="@color/edit_text_line_focus_tint_list"
+        android:hint= "@string/password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+
+
+
+
+<!-- Gender Text View-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gender"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginTop="494dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="266dp" />
+
+
+
+<!-- Group that contains the Radio Buttons for gender selection -->
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="549dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:text="@string/male"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:onClick="checkButton"/>
+
+        <RadioButton
+            android:id="@+id/radio_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:text="@string/female"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:onClick="checkButton"/>
+
+    </RadioGroup>
+
+
+
+
+<!-- Registration button  -->
+
+    <Button
+        android:id="@+id/btRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="636dp"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="70dp"
+        android:paddingEnd="70dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="@string/register_button"
+        android:textSize="16sp"
+        android:fontFamily="@font/roboto_black"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/RegLogBannerFont"/>
+
+
+
+<!-- the loading circle that appears when pressing the Register button   -->
+
+    <ProgressBar
+        android:id="@+id/pb_register"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+
+
+</RelativeLayout>
