@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "599249660496",
+    "project_id": "barmajiaat-fd715",
+    "storage_bucket": "barmajiaat-fd715.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599249660496:android:92aa120d92f57737b1ff55",
+        "android_client_info": {
+          "package_name": "com.example.barmajiaat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599249660496-lvptfgck0euma84p0ugfta0aclg1as6a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGx2mjXxOL29fwpkz-yRcHc8ida0AjLJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "599249660496-lvptfgck0euma84p0ugfta0aclg1as6a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

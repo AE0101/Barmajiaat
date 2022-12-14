@@ -92,51 +92,8 @@
 
 
 
+    <!-- Copy and Paste the RadioButtons for the Gender Selection here  -->
 
-<!-- Gender Text View-->
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/gender"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:fontFamily="@font/roboto_bold"
-        android:layout_marginTop="494dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginBottom="266dp" />
-
-
-
-<!-- Group that contains the Radio Buttons for gender selection -->
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="549dp"
-        android:orientation="horizontal">
-
-        <RadioButton
-            android:id="@+id/radio_male"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="45dp"
-            android:text="@string/male"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:onClick="checkButton"/>
-
-        <RadioButton
-            android:id="@+id/radio_female"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="45dp"
-            android:text="@string/female"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:onClick="checkButton"/>
-
-    </RadioGroup>
 
 
 
