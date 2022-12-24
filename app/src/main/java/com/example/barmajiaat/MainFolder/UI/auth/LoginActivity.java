@@ -9,6 +9,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.barmajiaat.MainFolder.UI.MainActivity;
@@ -31,12 +32,43 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseFirestore db;
 
 
+// Class called for the "Don’t have an account? Sign Up" question
+    TextView textView;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //this code is for hiding the action bar related only to the splash activity [Remove the Slashes before the two following codes to activate it]
         getSupportActionBar().hide();
         setContentView(R.layout.activity_login);
+
+        // this code refers to the "have an account" TextView, and it's job to move the user from the RegisterActivity to the LoginActivity when clicked.
+        textView=(TextView)findViewById(R.id.tv_login_dontHaveAccountWord);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+                finish();
+
+
+            }
+        });
+
+// this code refers to the "Sign In" TextView, and it's job to move the user from the RegisterActivity to the LoginActivity when clicked.
+        textView=(TextView)findViewById(R.id.tv_login_signUpWord);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+                finish();
+
+
+            }
+        });
+
+
+
 
 
 

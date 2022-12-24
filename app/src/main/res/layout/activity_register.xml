@@ -11,7 +11,6 @@
 
 
 <!-- Register banner-->
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,11 +23,38 @@
         android:layout_marginBottom="660dp" />
 
 
+<!-- account question part 1 -->
+    <TextView
+        android:id="@+id/tv_register_haveAccountWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/have_an_account"
+        android:textSize="14sp"
+        android:textColor="@color/RegLogAccountQuestion"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_marginTop="738dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginBottom="41dp" />
+
+
+<!-- account question part 2 -->
+    <TextView
+        android:id="@+id/tv_register_signInWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:textSize="14sp"
+        android:textColor="@color/RegLogAccountQuestion"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginTop="738dp"
+        android:layout_marginStart="235dp"
+        android:layout_marginBottom="41dp" />
+
+
 
 
 
 <!-- UserName Edit Text-->
-
     <EditText
         android:id="@+id/register_etUserName"
         android:inputType="text"
@@ -47,8 +73,7 @@
          />
 
 
-    <!-- Email Edit Text-->
-
+<!-- Email Edit Text-->
     <EditText
         android:id="@+id/register_etEmail"
         android:inputType="textEmailAddress"
@@ -72,7 +97,6 @@
 
 
 <!-- Password Edit Text-->
-
     <EditText
         android:id="@+id/register_etPassword"
         android:inputType="textPassword"
@@ -99,7 +123,6 @@
 
 
 <!-- Registration button  -->
-
     <Button
         android:id="@+id/btRegister"
         android:layout_width="wrap_content"
@@ -119,7 +142,6 @@
 
 
 <!-- the loading circle that appears when pressing the Register button   -->
-
     <ProgressBar
         android:id="@+id/pb_register"
         android:visibility="gone"

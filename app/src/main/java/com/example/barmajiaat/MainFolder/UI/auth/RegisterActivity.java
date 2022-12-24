@@ -5,12 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.style.ClickableSpan;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.barmajiaat.MainFolder.UI.MainActivity;
+import com.example.barmajiaat.MainFolder.UI.SplashActivity;
 import com.example.barmajiaat.MainFolder.UI.data.model.UserModel;
 import com.example.barmajiaat.MainFolder.app.Constant;
 import com.example.barmajiaat.R;
@@ -29,6 +34,12 @@ public class RegisterActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseFirestore db;
 
+// Class called for the "have an account? Sign In" question
+    TextView textView;
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +47,40 @@ public class RegisterActivity extends AppCompatActivity {
 //this code is for hiding the action bar related only to the splash activity [Remove the Slashes before the two following codes to activate it]
         getSupportActionBar().hide();
         setContentView(R.layout.activity_register);
+
+
+// this code refers to the "have an account" TextView, and it's job to move the user from the RegisterActivity to the LoginActivity when clicked.
+        textView=(TextView)findViewById(R.id.tv_register_haveAccountWord);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+                finish();
+
+
+            }
+        });
+
+// this code refers to the "Sign In" TextView, and it's job to move the user from the RegisterActivity to the LoginActivity when clicked.
+        textView=(TextView)findViewById(R.id.tv_register_signInWord);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+                finish();
+
+
+            }
+        });
+
+
+
+
+
+
+
+
+
 
 
         username = findViewById(R.id.register_etUserName);
@@ -174,6 +219,9 @@ public class RegisterActivity extends AppCompatActivity {
 
                     }
                 });
+
+
+
 
 
     }

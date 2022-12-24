@@ -10,4 +10,6 @@
 
     <color name="RegLogBannerFont">#5B67CA</color>
     <color name="EditTextLineColor">#E3E8F1</color>
+    <color name="RegLogAccountQuestion">#2C406E</color>
+
 </resources>

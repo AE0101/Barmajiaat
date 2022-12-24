@@ -11,7 +11,6 @@
 
 
 <!-- Login banner-->
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,9 +24,39 @@
 
 
 
+<!-- account question part 1 -->
+    <TextView
+        android:id="@+id/tv_login_dontHaveAccountWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_have_an_account"
+        android:textSize="14sp"
+        android:textColor="@color/RegLogAccountQuestion"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_marginTop="738dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginBottom="41dp" />
+
+
+<!-- account question part 2 -->
+    <TextView
+        android:id="@+id/tv_login_signUpWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textSize="14sp"
+        android:textColor="@color/RegLogAccountQuestion"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginTop="738dp"
+        android:layout_marginStart="255dp"
+        android:layout_marginBottom="41dp" />
+
+
+
+
+
 
 <!-- Email Edit Text-->
-
     <EditText
         android:id="@+id/login_etEmail"
         android:inputType="textEmailAddress"
@@ -48,7 +77,6 @@
 
 
 <!-- Password Edit Text-->
-
     <EditText
         android:id="@+id/login_etPassword"
         android:inputType="textPassword"
@@ -68,7 +96,6 @@
 
 
 <!-- Login button  -->
-
     <Button
         android:id="@+id/btLogin"
         android:layout_width="wrap_content"
@@ -88,7 +115,6 @@
 
 
 <!-- the loading circle that appears when pressing the Login button   -->
-
     <ProgressBar
         android:id="@+id/pb_login"
         android:visibility="gone"
